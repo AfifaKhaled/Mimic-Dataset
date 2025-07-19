@@ -19,6 +19,63 @@ In this paper, we address these gaps by providing a structured and comprehensive
  -  Novel and advanced data mining approaches.
  -  We also present a unified taxonomy of use cases, identify persistent methodological challenges, and highlight emerging opportunities at the intersection of artificial intelligence and clinical relevance.
 
+Datasets
+MIMIC-III Critical Care Dataset
+The Medical Information Mart for Intensive Care III (MIMIC-III) \cite{mimic_iii} is a publicly available dataset containing de-identified health data for 46,520 ICU patients (2001-2012) at Beth Israel Deaconess Medical Center. This multimodal dataset includes:
+
+ Clinical Data
+   
+     58,976 hospital admissions (38,597 distinct adults)
+     26,870 ICU stays (mean duration: 3.4 days)
+  
+    
+    Time-Series
+
+       4,000+ variables (vitals, labs, inputs/outputs)
+       1.2 billion+ charted events (median 1,753/patient)
+
+    
+   Multidimensional Records
+ 
+     Free-text notes (2.1 million nursing notes)
+     ICD-9 diagnoses (average 13.2 per admission)
+     SAPS-II/SOFA scores for severity assessment
+
+  Preprocessing
+
+    Temporal Alignment
+  
+          Unified timesteps (1-hour resolution)
+          Forward-fill for sparse measurements (max gap = 6hrs)
+   
+    
+   Feature Selection
+  
+        72 clinically relevant variables selected
+        Missingness threshold: >80\% excluded
+  
+  Normalization 
+
+        Z-score for continuous variables
+        One-hot encoding for categoricals
+
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{lrrrr}
+        \toprule
+        Cohort & Patients & Admissions & Mortality & Mean LOS \\
+        \midrule
+        Full MIMIC-III & 46,520 & 58,976 & 11.5\% & 6.7d \\
+        ICU Subset & 38,597 & 49,785 & 13.2\% & 3.4d \\
+        Final Cohort & 24,819 & 31,543 & 9.8\% & 4.1d \\
+        \bottomrule
+    \end{tabular}
+    \caption{MIMIC-III dataset characteristics. LOS = Length of Stay (days)}
+    \label{tab:mimic3_stats}
+\end{table}
+
+\noindent\textbf{Access}: Requires CITI certification and signed Data Use Agreement (DUA). Data available via PhysioNet \cite{physionet}.
 
 
 ## Citation
