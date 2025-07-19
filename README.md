@@ -30,13 +30,13 @@ The Medical Information Mart for Intensive Care III (MIMIC-III)  is a publicly a
      26,870 ICU stays (mean duration: 3.4 days)
   
     
-    Time-Series
+  Time-Series
 
        4,000+ variables (vitals, labs, inputs/outputs)
        1.2 billion+ charted events (median 1,753/patient)
 
     
-   Multidimensional Records
+ Multidimensional Records
  
      Free-text notes (2.1 million nursing notes)
      ICD-9 diagnoses (average 13.2 per admission)
