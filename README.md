@@ -19,12 +19,8 @@ In this paper, we address these gaps by providing a structured and comprehensive
  -  Traditional clinical and computational applications, and
  -  Novel and advanced data mining approaches.
  -  We also present a unified taxonomy of use cases, identify persistent methodological challenges, and highlight emerging opportunities at the intersection of artificial intelligence and clinical relevance.
-In this paper, we address these gaps by providing a structured and comprehensive review of MIMIC-based research, categorizing previous work into two broad domains.
- -  Traditional clinical and computational applications, and
- -  Novel and advanced data mining approaches.
- -  We also present a unified taxonomy of use cases, identify persistent methodological challenges, and highlight emerging opportunities at the intersection of artificial intelligence and clinical relevance.
 
-Datasets
+###  Datasets
 MIMIC-III Critical Care Dataset
 The Medical Information Mart for Intensive Care III (MIMIC-III)  is a publicly available dataset containing de-identified health data for 46,520 ICU patients (2001-2012) at Beth Israel Deaconess Medical Center. This multimodal dataset includes:
 
